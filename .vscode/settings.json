@@ -1,3 +1,4 @@
 {
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "cmake.sourceDirectory": "C:/Users/datam/OneDrive/Desktop/DO NOT OPEN/SOFTWARE DEVELOPMENT/Android app development/Flutter Development/simple_weather_app/windows/flutter"
 }
