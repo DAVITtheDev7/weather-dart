@@ -33,7 +33,8 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _errorMessage = "Error fetching weather data";
       });
-      print('Error fetching weather: $e');
+      print(
+          'Error fetching weather: $e'); // Add more detailed logging if needed
     }
   }
 
@@ -90,9 +91,6 @@ class _HomePageState extends State<HomePage> {
           children: [
             if (_errorMessage != null)
               Text(_errorMessage!, style: const TextStyle(color: Colors.red)),
-            const SizedBox(
-              height: 30,
-            ),
             if (_weather != null) ...[
               Text(
                 _weather!.cityName,
@@ -112,6 +110,9 @@ class _HomePageState extends State<HomePage> {
                 style: TextStyle(fontSize: 18, color: textColor),
               ),
             ] else ...[
+              const SizedBox(
+                height: 30,
+              ),
               CircularProgressIndicator(color: textColor),
             ],
           ],
